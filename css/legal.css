@@ -1,0 +1,56 @@
+/* Páginas legales: lectura cómoda sobre el mismo cielo, sin partículas detrás del texto */
+.legal {
+  position: relative;
+  z-index: 1;
+  max-inline-size: calc(720px + 2 * var(--margen));
+  margin-inline: auto;
+  padding: 112px var(--margen) var(--e16);
+}
+.legal__volver { font-size: 14px; color: var(--tinta-2); }
+.legal__titulo {
+  margin-top: var(--e8);
+  font-weight: 600;
+  font-size: clamp(40px, 9vw, 72px);
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--tinta);
+  text-wrap: balance;
+}
+.legal__fecha { margin-top: var(--e4); font-size: 15px; color: var(--tinta-3); }
+.legal__seccion { padding-block: var(--e8); border-top: 1px solid var(--linea); }
+.legal__seccion:first-of-type { margin-top: var(--e12); }
+.legal h2 { display: flex; gap: var(--e4); align-items: baseline; font-size: 21px; font-weight: 600; letter-spacing: -.015em; color: var(--tinta); }
+.legal h2 span { font: 500 13px/1 var(--mono); color: var(--tinta-3); }
+.legal p, .legal li { font-size: 17px; line-height: 1.65; }
+.legal p { margin-top: var(--e3); }
+.legal ul, .legal ol { margin-top: var(--e3); padding-left: 1.2em; }
+.legal ul { list-style: disc; }
+.legal ol { list-style: decimal; }
+.legal li + li { margin-top: var(--e2); }
+.legal li::marker { color: var(--tinta-3); }
+.legal strong { color: var(--tinta); font-weight: 500; }
+.legal a:not(.enlace) { color: var(--tinta); text-underline-offset: 4px; text-decoration-color: rgba(238, 242, 255, .35); }
+@media (min-width: 880px) { .legal { padding-top: 144px; } }
+.legal__entrada { margin-top: var(--e6); max-inline-size: 30em; font-size: 21px; line-height: 1.5; color: var(--tinta); }
+.legal__cierre { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e3) var(--e6); padding-top: var(--e8); border-top: 1px solid var(--linea); }
+
+/* Contacto: tres canales grandes */
+.canales { list-style: none; padding: 0; margin: 0 0 clamp(40px, 6vw, 64px); display: grid; gap: 1px; }
+.canal {
+  display: grid; grid-template-columns: 1fr; gap: 4px;
+  padding: 22px 0; border-block-end: 1px solid rgb(238 242 255 / .08);
+  color: var(--tinta-1, #EEF2FF); text-decoration: none;
+  transition: transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.canal__nombre { font: 500 13px/1 "Geist Mono", monospace; color: #6F7B9C; }
+.canal__dato { font-size: clamp(22px, 4.2vw, 34px); letter-spacing: -.03em; font-weight: 500; overflow-wrap: anywhere; }
+.canal__nota { color: #A6B1CF; font-size: 15px; }
+.canal:hover .canal__dato, .canal:focus-visible .canal__dato {
+  background: var(--degradado); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.canal:hover { transform: translateX(6px); }
+@media (prefers-reduced-motion: reduce) { .canal:hover { transform: none; } }
+.legal .canales li { padding: 0; margin: 0; }
+.legal .canales li::before, .legal .canales li::marker { content: none; display: none; }
+.legal .canales { padding: 0; }
+.canal--largo .canal__dato { font-size: clamp(17px, 4.6vw, 34px); overflow-wrap: normal; }

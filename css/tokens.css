@@ -1,0 +1,53 @@
+/* Quantum Beatz — tokens, tercera vuelta.
+   Lienzo: azul tinta profundo, el del logo, con dos focos de luz (azul eléctrico y cian) y grano.
+   Acento: degradado frío cian → azul eléctrico → índigo. Reservado: ámbar, solo para el calor. */
+:root {
+  color-scheme: dark;
+
+  /* Superficies */
+  --lienzo:   #040A1C;
+  --panel:    #0A1430;
+  --tarjeta:  #111D40;
+  --hundido:  rgba(214, 226, 255, .07);
+
+  /* Tinta */
+  --tinta:    #EEF2FF;
+  --tinta-2:  #A6B1CF;
+  --tinta-3:  #6F7B9C;
+  --linea:    rgba(214, 226, 255, .1);
+
+  /* Color de marca */
+  --cian:     #45E1F2;
+  --azul:     #3D7BFF;
+  --indigo:   #7A6BFF;
+  --ambar:    #FFB045;
+  --degradado: linear-gradient(100deg, #45E1F2 0%, #3D7BFF 55%, #7A6BFF 100%);
+
+  /* Vidrio */
+  --vidrio-fondo: linear-gradient(140deg, rgba(214, 226, 255, .1), rgba(214, 226, 255, .025) 60%);
+  --vidrio-borde: inset 0 0 0 1px rgba(214, 226, 255, .1), inset 0 1px 0 rgba(214, 226, 255, .16);
+  --vidrio-blur: blur(22px) saturate(1.5);
+
+  /* Radios */
+  --r-chip: 8px; --r-control: 14px; --r-tarjeta: 22px; --r-panel: 32px; --r-pildora: 999px;
+
+  /* Espaciado: base 4 */
+  --e1: 4px; --e2: 8px; --e3: 12px; --e4: 16px; --e5: 20px; --e6: 24px; --e8: 32px;
+  --e12: 48px; --e16: 64px; --e24: 96px; --e32: 128px;
+
+  /* Movimiento */
+  --t-micro: 120ms; --t-corto: 200ms; --t-medio: 280ms; --t-largo: 600ms;
+  --salida:  cubic-bezier(.22, 1, .36, 1);
+  --entrada: cubic-bezier(.55, 0, .8, .2);
+  --vaiven:  cubic-bezier(.65, 0, .35, 1);
+  --rebote:  cubic-bezier(.34, 1.56, .64, 1);
+
+  /* Letra */
+  --letra: "Geist", system-ui, sans-serif;
+  --mono:  "Geist Mono", ui-monospace, monospace;
+
+  --ancho: 1240px;
+  --margen: 20px;
+  --alto-control: 44px;
+}
+@media (min-width: 880px) { :root { --margen: 40px; } }
