@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es" class="sin-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Quantum Beatz · Tu PC, como el primer día</title>
+  <meta name="description" content="Mantenimiento de computadores a domicilio en Bogotá. Desarme completo, limpieza por ultrasonido, pasta térmica MX-4, MX-6 o MX-7, diagnóstico y pruebas. Lunes a domingo, 9 am a 8 pm.">
+  <link rel="icon" type="image/svg+xml" href="img/logo-marca.svg">
+  <meta name="theme-color" content="#040A1C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/tacto.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.replace('sin-js', 'con-js');</script>
+</head>
+<body>
+  <div class="cielo" aria-hidden="true"></div>
+  <canvas class="materia" aria-hidden="true"></canvas>
+
+  <header class="barra">
+    <nav class="barra__pildora vidrio" aria-label="Principal">
+      <a class="marca-qb" href="#inicio" aria-label="Quantum Beatz, inicio"><svg class="marca-qb__logo" viewBox="90 340 300 307" width="24" height="24" aria-hidden="true"><circle cx="262" cy="355" r="10" fill="#2150B8"/><circle cx="140" cy="397" r="10" fill="#2150B8"/><circle cx="375" cy="397" r="10" fill="#2150B8"/><circle cx="105" cy="492" r="10" fill="#2150B8"/><circle cx="140" cy="593" r="10" fill="#2150B8"/><circle cx="375" cy="593" r="10" fill="#2150B8"/><circle cx="262" cy="632" r="10" fill="#2150B8"/><circle cx="224" cy="380" r="15" fill="#62C3EA"/><circle cx="300" cy="380" r="15" fill="#62C3EA"/><circle cx="163" cy="422" r="15" fill="#62C3EA"/><circle cx="350" cy="422" r="15" fill="#62C3EA"/><circle cx="136" cy="459" r="15" fill="#62C3EA"/><circle cx="136" cy="525" r="15" fill="#62C3EA"/><circle cx="163" cy="565" r="15" fill="#62C3EA"/><circle cx="350" cy="567" r="15" fill="#62C3EA"/><circle cx="224" cy="607" r="15" fill="#62C3EA"/><circle cx="298" cy="607" r="15" fill="#62C3EA"/><circle cx="207" cy="424" r="20" fill="#6CCAD3"/><circle cx="314" cy="425" r="20" fill="#6CCAD3"/><circle cx="177" cy="467" r="20" fill="#6CCAD3"/><circle cx="177" cy="520" r="20" fill="#6CCAD3"/><circle cx="207" cy="565" r="20" fill="#6CCAD3"/><circle cx="314" cy="565" r="20" fill="#6CCAD3"/></svg><span>Quantum Beatz</span></a>
+      <div class="barra__enlaces">
+        <a href="#problema">Por qué</a>
+        <a href="#servicio">Mantenimiento</a>
+        <a href="#componentes">Componentes</a>
+      </div>
+      <a class="boton boton--cristal boton--barra-escritorio" href="#agendar" data-pulsable>Agendar</a>
+    </nav>
+  </header>
+
+  <div class="acciones-movil vidrio">
+    <a class="boton boton--degradado" href="#agendar" data-pulsable>Agendar mantenimiento</a>
+    <a class="boton boton--cristal boton--icono" href="https://wa.me/573150578569" target="_blank" rel="noopener" data-pulsable aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    </a>
+  </div>
+
+
+  <main id="inicio">
+    <!-- 1 · Héroe -->
+    <section class="heroe" data-forma="ventilador" data-lectura="Ventilador">
+      <div class="heroe__texto" data-despeja>
+        <h1 class="heroe__titular" data-aparece>Tu PC, <span class="degradado-texto">como el primer día.</span></h1>
+        <p class="heroe__apoyo" data-aparece>Mantenimiento a domicilio en Bogotá. Lo recogemos en tu casa, lo desarmamos pieza por pieza y te lo devolvemos limpio, fresco y rápido. Hasta el último átomo.</p>
+        <div class="heroe__acciones" data-aparece>
+          <a class="boton boton--degradado solo-escritorio" href="#agendar" data-pulsable>Agendar mantenimiento</a>
+          <a class="enlace" href="#problema">Por qué lo necesita</a>
+        </div>
+      </div>
+      <div class="ancla heroe__ancla" aria-hidden="true" data-sangra></div>
+    </section>
+
+    <!-- 2 · El problema, en una sola pantalla -->
+    <section class="problema" id="problema" data-forma="calor" data-lectura="Calor" aria-labelledby="problema-titulo">
+      <div class="ancla problema__ancla" aria-hidden="true"></div>
+      <h2 class="problema__titulo" id="problema-titulo" data-aparece data-despeja>Polvo. <span class="ambar-texto">Calor.</span> Lentitud.</h2>
+      <ol class="problema__cadena">
+        <li data-aparece data-despeja><h3>Polvo</h3><p>Los ventiladores lo meten todos los días. Se pega al disipador, a la placa y a las rejillas, y desde afuera no se ve.</p></li>
+        <li data-aparece data-despeja><h3>Calor</h3><p>El polvo atrapa el calor y la pasta térmica se seca con los años. El procesador ya no logra enfriarse.</p></li>
+        <li data-aparece data-despeja><h3>Lentitud</h3><p>Tarda en abrir, se congela cuando más lo necesitas y suena como un avión. Muchas veces no está viejo: está sucio por dentro.</p></li>
+      </ol>
+    </section>
+
+    <!-- 3 · El servicio: una pantalla; cada paso cambia la forma de la materia -->
+    <section class="servicio" id="servicio" data-forma="despiece" data-lectura="Desarme" data-selector aria-labelledby="servicio-titulo">
+      <div class="servicio__texto" data-despeja>
+        <h2 class="titulo-seccion" id="servicio-titulo" data-aparece>Lo devolvemos al orden. Átomo por átomo.</h2>
+        <ol class="pasos" data-aparece>
+          <li><button class="fila" type="button" data-opcion="despiece" data-lectura="Desarme" aria-pressed="true"><span class="fila__n">01</span><span class="fila__titulo">Desarme completo</span><span class="fila__texto">Abrimos tu equipo pieza por pieza para llegar donde el aire comprimido nunca llega.</span></button></li>
+          <li><button class="fila" type="button" data-opcion="ultrasonido" data-lectura="Ultrasonido" aria-pressed="false"><span class="fila__n">02</span><span class="fila__titulo">Limpieza por ultrasonido</span><span class="fila__texto">Las ondas sueltan el polvo y la grasa pegados en placas, rejillas y disipadores.</span></button></li>
+          <li><button class="fila" type="button" data-opcion="placa" data-lectura="Placa base" aria-pressed="false"><span class="fila__n">03</span><span class="fila__titulo">Placa base y ventiladores</span><span class="fila__texto">Limpiamos la placa, cada ventilador y el disipador.</span></button></li>
+          <li><button class="fila" type="button" data-opcion="pasta" data-lectura="Pasta térmica" aria-pressed="false"><span class="fila__n">04</span><span class="fila__titulo">Pasta térmica nueva</span><span class="fila__texto">MX-4, MX-6 o MX-7, según el procesador y la gráfica de tu equipo.</span></button></li>
+          <li><button class="fila" type="button" data-opcion="latido" data-lectura="Diagnóstico" aria-pressed="false"><span class="fila__n">05</span><span class="fila__titulo">Diagnóstico y pruebas</span><span class="fila__texto">Revisamos disco, RAM y componentes, optimizamos el sistema y lo probamos antes de entregarlo.</span></button></li>
+        </ol>
+        <p class="servicio__extra" data-aparece>Si lo pides, también eliminamos virus, formateamos y actualizamos drivers. En portátiles hacemos mantenimiento y cambio de disco; no reparamos placa.</p>
+        <p class="servicio__precio" data-aparece>El precio depende del estado de tu equipo. Te cotizamos sin compromiso.</p>
+      </div>
+      <div class="ancla servicio__ancla" aria-hidden="true"></div>
+    </section>
+
+    <!-- 4 · Confianza -->
+    <section class="seccion confianza" data-forma="polvo" data-lectura="Reseñas" aria-labelledby="confianza-titulo">
+      <h2 class="solo-lector" id="confianza-titulo">Reseñas de clientes</h2>
+      <!-- Una sola voz a la vez: la frase que más vende, resaltada -->
+      <div class="voces" data-despeja role="region" aria-roledescription="carrusel" aria-label="Reseñas de clientes" data-aparece>
+        <div class="voces__escenario" aria-live="polite">
+          <figure class="voz" data-activa>
+            <blockquote>“Me entregaron el equipo muy limpio y las temperaturas <em>bajaron muchísimo.</em>”</blockquote>
+            <figcaption>Erika Ospina</figcaption>
+          </figure>
+          <figure class="voz" aria-hidden="true">
+            <blockquote>“Buscaron mi PC en un buen tiempo y <em>mi equipo quedó en muy buenas condiciones.</em>”</blockquote>
+            <figcaption>Stephany Navarrete</figcaption>
+          </figure>
+          <figure class="voz" aria-hidden="true">
+            <blockquote>“Mi PC quedó trabajando súper bien. <em>Rápido y a un precio súper cómodo.</em>”</blockquote>
+            <figcaption>Cristian Moreno</figcaption>
+          </figure>
+          <figure class="voz" aria-hidden="true">
+            <blockquote>“Recogen mi computador, lo arreglan y <em>me lo entregan listo para trabajar.</em>”</blockquote>
+            <figcaption>Martha Isabel Bolaños</figcaption>
+          </figure>
+        </div>
+        <div class="voces__control">
+          <p class="voces__n"><span class="voces__actual">01</span> / 04</p>
+          <button class="boton boton--cristal boton--icono voces__atras" type="button" aria-label="Reseña anterior">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          </button>
+          <button class="boton boton--cristal boton--icono voces__adelante" type="button" aria-label="Reseña siguiente">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+        <p class="voces__dato">5.0 en Google · 4 de 4 reseñas con 5 estrellas · <a class="enlace" href="https://g.page/r/Cc6NsL9n2jDMEAE/review" target="_blank" rel="noopener">Ver en Google</a></p>
+      </div>
+    </section>
+
+    <!-- 5 · Componentes: la categoría señalada se dibuja con la materia -->
+    <section class="seccion componentes" id="componentes" data-forma="grafica" data-lectura="Tarjetas gráficas" data-selector aria-labelledby="componentes-titulo">
+      <div class="componentes__texto" data-despeja>
+        <h2 class="titulo-seccion" id="componentes-titulo" data-aparece>También vendemos componentes.</h2>
+        <p class="componentes__apoyo" data-aparece>Armamos tu PC a medida o mejoramos el que ya tienes, y nos aseguramos de que todo sea compatible.</p>
+        <ul class="catalogo" data-aparece>
+          <li><button class="fila fila--corta" type="button" data-opcion="grafica" data-lectura="Tarjetas gráficas" aria-pressed="true"><span class="fila__titulo">Tarjetas gráficas</span><span class="fila__nota">Gaming, render e IA</span></button></li>
+          <li><button class="fila fila--corta" type="button" data-opcion="procesador" data-lectura="Procesadores" aria-pressed="false"><span class="fila__titulo">Procesadores</span><span class="fila__nota">Compatibles con tu placa</span></button></li>
+          <li><button class="fila fila--corta" type="button" data-opcion="ram" data-lectura="Memoria RAM" aria-pressed="false"><span class="fila__titulo">Memoria RAM</span><span class="fila__nota">Más programas a la vez</span></button></li>
+          <li><button class="fila fila--corta" type="button" data-opcion="ssd" data-lectura="Almacenamiento SSD" aria-pressed="false"><span class="fila__titulo">Almacenamiento SSD</span><span class="fila__nota">Arranque y carga rápidos</span></button></li>
+          <li><button class="fila fila--corta" type="button" data-opcion="fuente" data-lectura="Fuentes de poder" aria-pressed="false"><span class="fila__titulo">Fuentes de poder</span><span class="fila__nota">Energía estable</span></button></li>
+          <li><button class="fila fila--corta" type="button" data-opcion="ventilador" data-lectura="Refrigeración" aria-pressed="false"><span class="fila__titulo">Refrigeración</span><span class="fila__nota">Ventiladores y disipadores</span></button></li>
+        </ul>
+        <div class="componentes__acciones" data-aparece>
+          <a class="enlace" href="https://quantumbeatz.com/tienda/">Ver la tienda</a>
+          <a class="enlace" href="https://wa.me/573150578569?text=Hola%20Quantum%20Beatz%2C%20quiero%20cotizar%20un%20PC%20armado" target="_blank" rel="noopener">Cotizar un PC armado</a>
+        </div>
+        <details class="licencias">
+          <summary>Licencias de software</summary>
+          <ul>
+            <li><span>Windows 11 Pro</span><span>$ 189.900</span></li>
+            <li><span>Office 2019 Vital</span><span>$ 389.900</span></li>
+            <li><span>Office 2021 Vital</span><span>$ 459.900</span></li>
+            <li><span>Microsoft 365</span><span>$ 489.900</span></li>
+            <li><span>Office 2019 Profesional Plus</span><span>$ 689.900</span></li>
+            <li><span>Kaspersky Premium</span><span>$ 139.900</span></li>
+            <li><span>AutoCAD</span><span>Cotizar</span></li>
+          </ul>
+        </details>
+      </div>
+      <div class="ancla componentes__ancla" aria-hidden="true"></div>
+    </section>
+
+    <!-- 6 · Cierre: el ventilador se ensambla mientras llenas el formulario -->
+    <section class="seccion cierre" id="agendar" data-forma="ensamble" data-lectura="Tu equipo" aria-labelledby="cierre-titulo">
+      <div class="cierre__cabeza" data-despeja>
+        <h2 class="frase__titulo" id="cierre-titulo" data-aparece>Pon tu PC en orden.</h2>
+        <p class="frase__texto" data-aparece>Cuéntanos qué tiene y te respondemos por WhatsApp.</p>
+      </div>
+      <div class="cierre__cuerpo">
+        <form class="pedido vidrio" id="pedido" novalidate data-despeja>
+          <fieldset class="grupo">
+            <legend class="grupo__nombre">Tipo de equipo</legend>
+            <div class="segmentado" role="radiogroup">
+              <label><input type="radio" name="equipo" value="Escritorio" data-sentir="seleccion" checked>Escritorio</label>
+              <label><input type="radio" name="equipo" value="Portátil" data-sentir="seleccion">Portátil</label>
+              <label><input type="radio" name="equipo" value="Tarjeta gráfica" data-sentir="seleccion">Gráfica</label>
+            </div>
+            <p class="alcance" aria-live="polite"><span>En portátiles hacemos mantenimiento y cambio de disco. No reparamos placa.</span></p>
+          </fieldset>
+          <fieldset class="grupo">
+            <legend class="grupo__nombre">Qué notas</legend>
+            <div class="sintomas">
+              <label class="sintoma"><input class="casilla" type="checkbox" name="nota" value="se calienta" data-sentir="toque">Se calienta</label>
+              <label class="sintoma"><input class="casilla" type="checkbox" name="nota" value="va lento" data-sentir="toque">Va lento</label>
+              <label class="sintoma"><input class="casilla" type="checkbox" name="nota" value="hace ruido" data-sentir="toque">Hace ruido</label>
+              <label class="sintoma"><input class="casilla" type="checkbox" name="nota" value="quiero limpieza preventiva" data-sentir="toque">Limpieza preventiva</label>
+            </div>
+          </fieldset>
+          <div class="campos">
+            <label class="campo">
+              <span class="campo__nombre">Componentes <span class="tono-3">(opcional)</span></span>
+              <input type="text" name="componentes" placeholder="Ryzen 5 5600, RTX 3060, 16 GB" autocomplete="off">
+            </label>
+            <label class="campo">
+              <span class="campo__nombre">Barrio o localidad</span>
+              <input type="text" name="barrio" placeholder="Chapinero" autocomplete="address-level3">
+            </label>
+          </div>
+          <div class="pedido__pie">
+            <button class="boton boton--degradado boton--enviar" type="submit">
+              <span class="caras">
+                <span data-activa>Agendar por WhatsApp</span>
+                <span>
+                  <svg class="marca" viewBox="0 0 22 22" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M6 11.5l3.4 3.4L16 7.6"/></svg>
+                  Abriendo WhatsApp
+                </span>
+              </span>
+            </button>
+            <p class="pedido__nota">Se abre WhatsApp con tu mensaje listo. Respondemos de lunes a domingo, 9 am – 8 pm.</p>
+          </div>
+        </form>
+        <div class="cierre__arte">
+          <div class="ancla cierre__ancla" aria-hidden="true"></div>
+          <ol class="domicilio" data-despeja>
+            <li><span>Lo recogemos</span> en tu casa u oficina, en Bogotá.</li>
+            <li><span>Lo dejamos como nuevo</span> en nuestro laboratorio.</li>
+            <li><span>Te lo devolvemos</span> listo, con garantía sobre el servicio.</li>
+          </ol>
+          <p class="domicilio__horario">Lunes a domingo, 9 am – 8 pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" data-forma="polvo" data-lectura="Quantum Beatz">
+    <div class="pie__lema">
+      <a class="marca-qb" href="#inicio"><svg class="marca-qb__logo" viewBox="90 340 300 307" width="24" height="24" aria-hidden="true"><circle cx="262" cy="355" r="10" fill="#2150B8"/><circle cx="140" cy="397" r="10" fill="#2150B8"/><circle cx="375" cy="397" r="10" fill="#2150B8"/><circle cx="105" cy="492" r="10" fill="#2150B8"/><circle cx="140" cy="593" r="10" fill="#2150B8"/><circle cx="375" cy="593" r="10" fill="#2150B8"/><circle cx="262" cy="632" r="10" fill="#2150B8"/><circle cx="224" cy="380" r="15" fill="#62C3EA"/><circle cx="300" cy="380" r="15" fill="#62C3EA"/><circle cx="163" cy="422" r="15" fill="#62C3EA"/><circle cx="350" cy="422" r="15" fill="#62C3EA"/><circle cx="136" cy="459" r="15" fill="#62C3EA"/><circle cx="136" cy="525" r="15" fill="#62C3EA"/><circle cx="163" cy="565" r="15" fill="#62C3EA"/><circle cx="350" cy="567" r="15" fill="#62C3EA"/><circle cx="224" cy="607" r="15" fill="#62C3EA"/><circle cx="298" cy="607" r="15" fill="#62C3EA"/><circle cx="207" cy="424" r="20" fill="#6CCAD3"/><circle cx="314" cy="425" r="20" fill="#6CCAD3"/><circle cx="177" cy="467" r="20" fill="#6CCAD3"/><circle cx="177" cy="520" r="20" fill="#6CCAD3"/><circle cx="207" cy="565" r="20" fill="#6CCAD3"/><circle cx="314" cy="565" r="20" fill="#6CCAD3"/></svg><span>Quantum Beatz</span></a>
+    </div>
+    <div class="pie__columna">
+      <h2 class="etiqueta">Contacto</h2>
+      <a href="tel:+573150578569">315 057 8569</a>
+      <a href="mailto:servicioalcliente@quantumbeatz.com">servicioalcliente@quantumbeatz.com</a>
+      <a href="https://wa.me/573150578569" target="_blank" rel="noopener">WhatsApp</a>
+      <p class="tono-3">Lunes a domingo, 9 am – 8 pm</p>
+    </div>
+    <div class="pie__columna">
+      <h2 class="etiqueta">Información</h2>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="https://quantumbeatz.com/tienda/">Tienda</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="cookies.html">Política de cookies</a>
+      <a href="devoluciones.html">Devoluciones y reembolsos</a>
+    </div>
+  </footer>
+
+  <script src="js/tacto.js"></script>
+  <script src="js/pagina.js"></script>
+  <script type="module" src="js/materia.js"></script>
+</body>
+</html>
